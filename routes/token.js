@@ -1,7 +1,6 @@
-const express = require("express");
-const jwt = require("jsonwebtoken");
-const { supabase } = require("../config/supabase.js");
-
+import express from "express";
+import jwt from "jsonwebtoken";
+import supabase from "../config/supabase.js";
 const router = express.Router();
 
 router.post("/createToken", async (req, res) => {
@@ -29,5 +28,4 @@ router.post("/createToken", async (req, res) => {
     res.status(500).json({ error: "Internal server error" });
   }
 });
-
-module.exports = router;
+export default router;

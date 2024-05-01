@@ -1,5 +1,6 @@
-const express = require("express");
-const { supabase } = require("../config/supabase.js");
+import express from "express";
+import supabase from "../config/supabase.js";
+
 const router = express.Router();
 
 router.get("/recentblog", async (req, res) => {
@@ -595,4 +596,4 @@ router.post("/fetchComradesArray", async (req, res) => {
 
 
 
-module.exports = router;
+export default router;

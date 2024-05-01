@@ -1,5 +1,6 @@
-const express = require("express");
-const { supabase } = require("../config/supabase.js");
+import express from "express";
+import supabase from "../config/supabase.js";
+
 const router = express.Router();
 
 router.get("/bypost/:query", async (req, res) => {
@@ -411,4 +412,5 @@ router.post("/authenticated/bypeople/:query", async (req, res) => {
 //     res.status(500).json({ error: error.message });
 //   }
 // });
-module.exports = router;
+
+export default router;

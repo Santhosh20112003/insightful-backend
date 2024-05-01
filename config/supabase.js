@@ -1,7 +1,7 @@
-const { createClient } = require("@supabase/supabase-js");
-const dotenv = require("dotenv");
+import { createClient } from "@supabase/supabase-js";
+import dotenv from "dotenv";
 dotenv.config();
 
 const supabase = createClient(process.env.DB_URL, process.env.DB_SECRET);
 
-module.exports = supabase;
+export default supabase;
