@@ -1,14 +1,14 @@
-import express from "express";
-import dotenv from "dotenv";
-import cors from "cors";
-import BlogRouter from "./routes/blog.js";
-import TagRouter from "./routes/tag.js";
-import SearchRouter from "./routes/search.js";
-import InsightsRouter from "./routes/insights.js";
-import TokenRouter from "./routes/token.js";
-import AuthRouter from "./routes/auth.js";
-import ComradeRouter from "./routes/comrades.js";
-import RecomendationRouter from "./routes/recomendation.js";
+const express = require("express");
+const dotenv = require("dotenv");
+const cors = require("cors");
+const BlogRouter = require("./routes/blog.js");
+const TagRouter = require("./routes/tag.js");
+const SearchRouter = require("./routes/search.js");
+const InsightsRouter = require("./routes/insights.js");
+const TokenRouter = require("./routes/token.js");
+const AuthRouter = require("./routes/auth.js");
+const ComradeRouter = require("./routes/comrades.js");
+const RecomendationRouter = require("./routes/recomendation.js");
 
 dotenv.config();
 

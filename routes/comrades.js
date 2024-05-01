@@ -1,5 +1,5 @@
-import express from "express";
-import supabase from "../config/supabase.js";
+const express = require("express");
+const { supabase } = require("../config/supabase.js");
 
 const router = express.Router();
 
@@ -167,4 +167,4 @@ router.post("/addandremovecomrade", async (req, res) => {
   }
 });
 
-export default router;
+module.exports = router;

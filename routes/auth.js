@@ -1,7 +1,7 @@
-import express from "express";
-import transporter from "../config/nodemailer.js";
-import supabase from "../config/supabase.js";
-import { SignupTemplte } from "../emails/templates.js";
+const express = require("express");
+const transporter = require("../config/nodemailer.js");
+const { supabase } = require("../config/supabase.js");
+const { SignupTemplte } = require("../emails/templates.js");
 
 const router = express.Router();
 
@@ -161,4 +161,4 @@ router.post("/deleteblog", async (req, res) => {
   }
 });
 
-export default router;
+module.exports = router;
